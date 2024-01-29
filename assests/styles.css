@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    /* margin: 50px; */
+    display: flex;
+    column-gap: 4rem;
+    width: 100%;
+    height: 100vh;
+    background-color:hsl(0, 0%, 6%); 
+    padding: 80px;
+    background-position: center;background-size: cover;
+}
+.content--info{
+    width: 500px;
+    height: 380px;
+    background-color: red;
+    border-radius: 15px;
+    border: 5px solid transparent;
+}
+.content--info h2{
+    font-size: 50px;
+        padding-left: 50px;
+        font-family: Tahoma;
+        padding-left: 20px;
+        margin-top: 9%;
+        font-style: italic;
+        color: white;
+        
+}
+.content--info p{
+    padding-left: 20px;
+        padding-bottom: 25px;
+        line-height: 30px;
+        font-family: Arial;
+        letter-spacing: 1.2px;
+}
+.calculator{
+    width: 500px;
+    height: 380px;
+    
+    border-radius: 10px;
+    padding: 25px;
+    text-align: center;
+}
+.calculator input{
+    border-radius: 20px;
+    border: 5px solid aqua;
+    width: 450px;
+    margin: 10px;
+    height: 40px;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Tahoma;
+}
+.buttons{
+    display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 5px 3px;
+        margin-top: 30px;
+}
+.buttons button{
+width: 120px;
+padding: auto;
+text-align: center;
+height: 40px;
+background-color: cya;
+border-radius: 15px;
+border: 3px solid transparent;
+transition: border 0.5s;
+font-weight: bold;
+cursor: pointer;
+}
+button:hover {
+    background-color: #ccc;
+}
+@media screen and (max-width:1150px) {
+    .container{
+        display: grid;
+        padding: 10px;
+    }
+        .content--info {
+            width: 450px;
+            height: 150px;
+            background-color: red;
+        }
+    
+        .content--info h2 {
+            font-size: 30px;
+            padding-left: 30px;
+            margin-top: 6%;
+        }
+    
+        .content--info p {
+            padding-left: 10px;
+            padding-top: 25px;
+            line-height: 15px;
+        
+        }
+        .calculator {
+                    width: 300px;
+                    height: 300px;
+                    background: transparent;
+                    border-radius: 10px;
+                    padding: 15px;
+                    text-align: left;
+                }
+        
+                .calculator input {
+                    border: 2px solid aqua;
+                    width: 300px;
+                    height: 30px;
+                    padding: 10px;
+                    font-size: 15px;
+                }
+        
+                .buttons {
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    grid-gap: 4px 2px;
+                    margin-top: 20px;
+                }
+}
