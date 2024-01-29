@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assests/styles.css">
+
+    <title>BASIC CALCULATOR</title>
+</head>
+<body>
+
+    <div class="container">
+
+
+        <div class="content--info">
+            <h2> basic calculator</h2>
+            <p>This is calculator build of html css and js</p>
+        </div>
+
+        <div class="calculator">
+            <input type="text" id="result" readonly>
+            <div class="buttons">
+                <button onclick="clearResult()">C</button>
+                <button onclick="calculate('/')">/</button>
+                <button onclick="calculate('*')">*</button>
+                <button onclick="calculate('7')">7</button>
+                <button onclick="calculate('8')">8</button>
+                <button onclick="calculate('9')">9</button>
+                <button onclick="calculate('-')">-</button>
+                <button onclick="calculate('4')">4</button>
+                <button onclick="calculate('5')">5</button>
+                <button onclick="calculate('6')">6</button>
+                <button onclick="calculate('+')">+</button>
+                <button onclick="calculate('1')">1</button>
+                <button onclick="calculate('2')">2</button>
+                <button onclick="calculate('3')">3</button>
+                <button onclick="calculate('0')">0</button>
+                <button onclick="calculate('.')">.</button>
+
+                <button  id="click" onclick="evaluate()">=</button>
+            </div>
+        </div>
+
+    </div>
+    
+    
+
+
+
+
+    <script src="/assests/main.js"></script>
+</body>
+</html>
